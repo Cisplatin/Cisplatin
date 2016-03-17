@@ -1,3 +1,13 @@
+div.content {
+    text-align: center;
+    height: auto;
+    padding-top: 5%;
+}
+
+img.landing {
+    width: 50%;
+}
+
 img.brand {
     height: 20px;
 }
