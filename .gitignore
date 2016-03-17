@@ -63,3 +63,6 @@ target/
 
 # Databse things
 *.sqlite3
+
+# Temporary files
+*.swp
