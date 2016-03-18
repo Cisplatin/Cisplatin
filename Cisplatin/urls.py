@@ -17,5 +17,6 @@ from django.conf.urls import url
 from Cisplatin_App.views import home
 
 urlpatterns = [
-    url(r'^', home.home),
+    url(r'^$', home.home),
+    url(r'^resume$', home.resume),
 ]
