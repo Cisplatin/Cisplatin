@@ -19,5 +19,4 @@ python manage.py migrate && python manage.py runserver 8000
 - Work on PGP section aesthetics                                                   
 - Make the homepage interactive somehow                                            
 - Add current Spotify/Github activity     
-- Add clickjacking protection (Content-Security-Policy)
 - Download local versions of Google fonts
