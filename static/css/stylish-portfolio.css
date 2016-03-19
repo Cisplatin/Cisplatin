@@ -184,7 +184,8 @@ hr.small-black {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 50%;
+    font-family: 'Ubuntu Mono';
 }
 
 /* Contact */

@@ -6,7 +6,10 @@ from django.http import HttpResponse
 
 # Render the homepage, with PGP key
 def home(request):
-    return render(request, 'home.html')
+    # Load up the PGP key
+    with open("static/pgp/public-key.asc", "r") as public:
+        key = public.read()
+    return render(request, 'home.html', {'PGP_KEY' : key})
 
 # Return Simon's resume
 def resume(request):
