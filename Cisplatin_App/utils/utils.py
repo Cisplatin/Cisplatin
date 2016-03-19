@@ -7,4 +7,7 @@ def http_headers(response):
     # Add headers to avoid clickjacking
     response['X-Frame-Options'] = 'DENY'
     response['Content-Security-Policy'] = "frame-ancestors 'none'"
+
+    # Stop any robots for indexing anything
+    response['X-Robots-Tag'] = 'noindex'
     return response
