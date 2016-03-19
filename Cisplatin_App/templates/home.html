@@ -74,6 +74,9 @@
                 <a href="#services" onclick = $("#menu-close").click(); >Projects</a>
             </li>
             <li>
+                <a href="#PGP" onclick = $("#menu-close").click(); >PGP Key</a>
+            </li>
+            <li>
                 <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
             </li>
         </ul>
@@ -193,7 +196,9 @@ A variety of scripts about data structures, implemented algorithms, and my vimrc
             <div class="row text-center">
                 <h2>PGP Key</h2>
                 <hr class="small-black">
-                <textarea id="PGPkey" class="form-control PGPkey"></textarea>
+                <textarea id="PGPkey" class="form-control PGPkey">
+                {% PGP_KEY %}
+                </textarea>
             </div>
         </div>
     </section>

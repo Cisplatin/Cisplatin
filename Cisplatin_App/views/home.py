@@ -4,7 +4,7 @@ from wsgiref.util import FileWrapper
 from django.shortcuts import render
 from django.http import HttpResponse
 
-# Render the homepage
+# Render the homepage, with PGP key
 def home(request):
     return render(request, 'home.html')
 
