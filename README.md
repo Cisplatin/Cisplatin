@@ -12,9 +12,9 @@ cd Cisplatin && sudo -H pip install -r requirements.txt
 python manage.py migrate && python manage.py runserver 8000
 ```
 
-## To Do
+## Current To Do
 
-- Make a cleaner favicon, add a robots.txt
-- Add a nice 404 page
-- Include sections for PGP key, work experience
-- An interactive homepage
+- Add a "Copy to Clipboard" for PGP                                                
+- Work on PGP section aesthetics                                                   
+- Make the homepage interactive somehow                                            
+- Add current Spotify/Github activity     
