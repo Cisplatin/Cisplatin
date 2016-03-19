@@ -14,6 +14,7 @@ python manage.py migrate && python manage.py runserver 8000
 
 ## Current To Do
 
+- Add a robot.txt (Why would anyone even crawl this?)
 - Add a "Copy to Clipboard" for PGP                                                
 - Work on PGP section aesthetics                                                   
 - Make the homepage interactive somehow                                            
