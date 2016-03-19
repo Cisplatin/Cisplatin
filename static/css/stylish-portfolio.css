@@ -175,7 +175,7 @@ hr.small-black {
 
 /* PGP key */
 .PGP {
-    padding: 50px 0;
+    padding: 25px 0;
     background-color: #33CC66;
 }
 
@@ -186,6 +186,7 @@ hr.small-black {
     margin-right: auto;
     width: 50%;
     font-family: 'Ubuntu Mono';
+    vertical-align: top;
 }
 
 /* Contact */
