@@ -63,6 +63,11 @@ hr.small {
     max-width: 100px;
 }
 
+hr.small-black {
+    max-width: 100px;
+    border-color: black;
+}
+
 /* Side Menu */
 
 #sidebar-wrapper {
@@ -176,7 +181,10 @@ hr.small {
 
 .PGPkey {
     resize: none;
-    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
 }
 
 /* Contact */
@@ -254,3 +262,8 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
+.description {
+    float: left;
+}
+
