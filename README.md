@@ -17,5 +17,4 @@ python manage.py migrate && python manage.py runserver 8000
 - Make a cleaner favicon, add a robots.txt
 - Add a nice 404 page
 - Include sections for PGP key, work experience
-- Add a notification for when the site is to be updated (and a script to update)
 - An interactive homepage

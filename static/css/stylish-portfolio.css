@@ -168,6 +168,17 @@ hr.small {
     padding: 50px 0;
 }
 
+/* PGP key */
+.PGP {
+    padding: 50px 0;
+    background-color: #33CC66;
+}
+
+.PGPkey {
+    resize: none;
+    width: 50%;
+}
+
 /* Contact */
 
 .contact {
