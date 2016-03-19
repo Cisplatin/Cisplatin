@@ -176,7 +176,7 @@ hr.small-black {
 /* PGP key */
 .PGP {
     padding: 25px 0;
-    background-color: #33CC66;
+    background-color: #00B5AE;
 }
 
 .PGPkey {
@@ -184,10 +184,15 @@ hr.small-black {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 45%;
     font-family: 'Ubuntu Mono';
     vertical-align: top;
 }
+
+/*
+Thanks to Palleton for the color scheme!
+http://paletton.com/#uid=53K0u0kI6DnmFJkt8I0IVrkL6lh
+*/
 
 /* Contact */
 
@@ -199,6 +204,7 @@ hr.small-black {
 
 .services {
     padding: 50px 0;
+    background-color:"#0C46C0"
 }
 
 .service-item {
