@@ -19,4 +19,5 @@ from Cisplatin_App.views import home
 urlpatterns = [
     url(r'^$', home.home),
     url(r'^resume$', home.resume),
+    url(r'^robots.txt$', home.robots),
 ]

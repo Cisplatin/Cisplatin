@@ -22,3 +22,7 @@ def resume(request):
     response['Content-Disposition'] = 'attachment; filename="%s"' % basename(filename)
     response['Content-Length'] = getsize(filename)
     return response
+
+# Return the robots.txt
+def robots(request):
+    return http_headers(render(request, 'robots.txt'))
