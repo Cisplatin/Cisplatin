@@ -14,8 +14,6 @@ python manage.py migrate && python manage.py runserver 8000
 
 ## Current To Do
 
-- Add a "Copy to Clipboard" for PGP                                                
-- Work on PGP section aesthetics                                                   
-- Make the homepage interactive somehow                                            
-- Add current Spotify/Github activity     
+- Make the homepage interactive somehow
+- Add current Spotify/Github activity
 - Download local versions of Google fonts
