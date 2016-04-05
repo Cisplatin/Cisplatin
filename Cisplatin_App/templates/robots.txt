@@ -1,2 +1,4 @@
+<pre>
 User-agent: *
 Allow: /
+</pre>
