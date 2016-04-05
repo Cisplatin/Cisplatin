@@ -214,6 +214,10 @@ If you would like to send me an e-mail with sensitive information, I ask that yo
 I rotate my keys on an occasional basis, so I do not recommend saving my public key.
                 </p>
                 <textarea id="PGPkey" class="PGPkey form-control" rows=10 wrap="off" readonly>{{ PGP_KEY }}</textarea>
+                <br>
+                <button id="PGPcopy" class="btn btn-success" data-clipboard-text="{{ PGP_KEY }}">
+                    Copy to Clipboard <i class="fa fa-clipboard"></i>
+                </button>
             </div>
         </div>
     </section>
@@ -257,8 +261,14 @@ I rotate my keys on an occasional basis, so I do not recommend saving my public 
     <!-- Bootstrap Core JavaScript -->
     <script src="{% static "js/bootstrap.min.js" %}"></script>
 
+    <!-- Clipboard.js -->
+    <script src="{% static "js/clipboard.min.js" %}"></script>
+
     <!-- Custom Theme JavaScript -->
     <script>
+    // Instatiate the clipboard
+    new Clipboard('.btn');
+
     // Closes the sidebar menu
     $("#menu-close").click(function(e) {
         e.preventDefault();
