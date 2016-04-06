@@ -20,5 +20,6 @@ urlpatterns = [
     url(r'^$', home.home),
     url(r'^resume$', home.resume),
     url(r'^blog$', blog.home),
+    url(r'^blog/exploits-using-xlsx-files$', blog.exploits_using_xlsx_files),
     url(r'^robots.txt$', home.robots),
 ]
