@@ -14,11 +14,11 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from Cisplatin_App.views import home
+from Cisplatin_App.views import home, blog
 
 urlpatterns = [
     url(r'^$', home.home),
     url(r'^resume$', home.resume),
-    url(r'^blog$', home.blog),
+    url(r'^blog$', blog.home),
     url(r'^robots.txt$', home.robots),
 ]

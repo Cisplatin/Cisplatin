@@ -14,10 +14,6 @@ def home(request):
         key = public.read()
     return http_headers(render(request, 'home.html', {'PGP_KEY' : key}))
 
-# Render the blog page
-def blog(request):
-    return http_headers(render(request, 'blog.html'))
-
 # Return Simon's resume
 def resume(request):
     filename = join(BASE_DIR, "static/pdf/Simon Hajjar.pdf")
