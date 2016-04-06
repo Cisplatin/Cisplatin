@@ -1,71 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
+{% load staticfiles %}
 
-<head>
-
-    {% load staticfiles %}
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Cisplatin</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="{% static "css/bootstrap.min.css" %}" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="{% static "css/stylish-portfolio.css" %}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="{% static "font-awesome/css/font-awesome.min.css" %}" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="{% static "favicon/apple-touch-icon-57x57.png" %}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{% static "favicon/apple-touch-icon-60x60.png" %}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{% static "favicon/apple-touch-icon-72x72.png" %}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{% static "favicon/apple-touch-icon-76x76.png" %}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{% static "favicon/apple-touch-icon-114x114.png" %}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{% static "favicon/apple-touch-icon-120x120.png" %}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{% static "favicon/apple-touch-icon-144x144.png" %}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{% static "favicon/apple-touch-icon-152x152.png" %}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{% static "favicon/apple-touch-icon-180x180.png" %}">
-    <link rel="icon" type="image/png" href="{% static "favicon/favicon-32x32.png" %}" sizes="32x32">
-    <link rel="icon" type="image/png" href="{% static "favicon/android-chrome-192x192.png" %}" sizes="192x192">
-    <link rel="icon" type="image/png" href="{% static "favicon/favicon-96x96.png" %}" sizes="96x96">
-    <link rel="icon" type="image/png" href="{% static "favicon/favicon-16x16.png" %}" sizes="16x16">
-    <link rel="manifest" href="{% static "favicon/manifest.json" %}">
-    <link rel="mask-icon" href="{% static "favicon/safari-pinned-tab.svg" %}" color="#5bbad5">
-    <link rel="shortcut icon" href="{% static "favicon/favicon.ico" %}">
-
-    <meta name="apple-mobile-web-app-title" content="Cisplatin">
-    <meta name="application-name" content="Cisplatin">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-TileImage" content="{% static "favicon/mstile-144x144.png" %}">
-    <meta name="msapplication-config" content="{% static "favicon/browserconfig.xml" %}">
-    <meta name="theme-color" content="#ffffff">
-
-    <!-- Google Analytics -->
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-75776244-2', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-</head>
-
-<body>
+{% block content %}
 
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -120,13 +56,10 @@ popular websites. Besides computer science, I enjoy weightlifting, and am an asp
                     <a href="/resume" class="btn btn-dark">Download Resume</a>
                 </div>
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
- <!-- Services -->
-    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <!-- Services -->
     <section id="services" class="services bg-primary">
         <div class="container">
             <div class="row text-center">
@@ -137,9 +70,9 @@ popular websites. Besides computer science, I enjoy weightlifting, and am an asp
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-gamepad fa-stack-1x text-primary"></i>
-                            </span>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-gamepad fa-stack-1x text-primary"></i>
+                                </span>
                                 <h4>
                                     <strong>Grandmaster</strong>
                                 </h4>
@@ -152,9 +85,9 @@ An implementation of chess in C++, with features such as PGN export and ELO rati
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-lock fa-stack-1x text-primary"></i>
-                            </span>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-lock fa-stack-1x text-primary"></i>
+                                </span>
                                 <h4>
                                     <strong>Krypton</strong>
                                 </h4>
@@ -167,9 +100,9 @@ Classical cryptographic primitives written in C, ranging from random number gene
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-recycle fa-stack-1x text-primary"></i>
-                            </span>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-recycle fa-stack-1x text-primary"></i>
+                                </span>
                                 <h4>
                                     <strong>Snippets</strong>
                                 </h4>
@@ -182,9 +115,9 @@ A variety of scripts about data structures, implemented algorithms, and my vimrc
                         <div class="col-md-3 col-sm-6">
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-circle fa-stack-1x text-primary"></i>
-                            </span>
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-circle fa-stack-1x text-primary"></i>
+                                </span>
                                 <h4>
                                     <strong>Baduk</strong>
                                 </h4>
@@ -196,13 +129,9 @@ A website for playing Go, written using Node.js and Socket.io. Currently hosted 
                         </div>
 
                     </div>
-                    <!-- /.row (nested) -->
                 </div>
-                <!-- /.col-lg-10 -->
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
     <!-- PGP Key -->
@@ -258,12 +187,6 @@ I rotate my keys on an occasional basis, so I do not recommend saving my public 
         </div>
     </section>
 
-    <!-- jQuery -->
-    <script src="{% static "js/jquery.js" %}"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="{% static "js/bootstrap.min.js" %}"></script>
-
     <!-- Clipboard.js -->
     <script src="{% static "js/clipboard.min.js" %}"></script>
 
@@ -302,6 +225,4 @@ I rotate my keys on an occasional basis, so I do not recommend saving my public 
     });
     </script>
 
-</body>
-
-</html>
+{% endblock %}
