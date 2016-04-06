@@ -1,0 +1,14 @@
+{% load staticfiles %}
+{% include "header.html" %}
+
+<body>
+    <!-- jQuery -->
+    <script src="{% static "js/jquery.js" %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static "js/bootstrap.min.js" %}"></script>
+
+    {% block content %}{% endblock %}
+</body>
+
+</html>
