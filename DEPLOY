@@ -1,0 +1,19 @@
+#!/bin/bash
+
+HOST=198.199.94.103
+
+# A script used to update the site. Simply run if you have the SSH key.
+# If you don't have the SSH key, stop trying to get into my server.
+
+git checkout master
+git push origin master
+ssh root@$HOST bash -c "'
+    cd /home/django/Cisplatin
+    git checkout master
+    git pull
+    git checkout production
+    git merge master
+    service gunicorn restart
+    service nginx restart
+    exit
+'"
