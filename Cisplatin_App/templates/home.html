@@ -175,6 +175,7 @@ I rotate my keys on an occasional basis, so I do not recommend saving my public 
                 </p>
                 <textarea id="PGPkey" class="PGPkey form-control" rows=10 wrap="off" readonly>{{ PGP_KEY }}</textarea>
                 <br>
+                <!-- Add a dialog pop-up for successful copies -->
                 <button id="PGPcopy" class="btn btn-success" data-clipboard-text="{{ PGP_KEY }}">
                     Copy to Clipboard <i class="fa fa-clipboard"></i>
                 </button>
