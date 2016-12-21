@@ -14,12 +14,16 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
-from Cisplatin_App.views import home, blog
+from Cisplatin_App.views import home, blog, instagram
 
 urlpatterns = [
     url(r'^$', home.home),
     url(r'^resume$', home.resume),
     url(r'^blog$', blog.home),
+
+    # Instagram-related URLs
+    url(r'^instagram$', instagram.home),
+
     url(r'^blog/exploits-using-xlsx-files$', blog.exploits_using_xlsx_files),
     url(r'^robots.txt$', home.robots),
 ]
