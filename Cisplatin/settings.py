@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.9/howto/deployment/checklist/
 
@@ -23,11 +22,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Don't bother try to break the site with this, a different key is used in production.
 HOST = "http://localhost:8000"
 SECRET_KEY = '*tl8p!o@84rpqdcw172=kema%m^#^!=6$g++z+(j*io_-ek6lg'
-
-# Instagram related variables
-# TODO: If this gets out of sandbox mode, change the client secret
-INSTAGRAM_CLIENT_ID = "37988b550ede4e48842e50d9c95afe3e"
-INSTAGRAM_CLIENT_SECRET = "93d3466fb1ca4574a1f9406632ca1fed"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
