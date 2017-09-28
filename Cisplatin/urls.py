@@ -18,7 +18,7 @@ from Cisplatin_App.views import home, blog
 
 urlpatterns = [
     url(r'^$', home.home),
-    url(r'^resume$', home.resume),
+    url(r'^final_testament$', home.final_testament),
     url(r'^blog$', blog.home),
 
     url(r'^blog/exploits-using-xlsx-files$', blog.exploits_using_xlsx_files),

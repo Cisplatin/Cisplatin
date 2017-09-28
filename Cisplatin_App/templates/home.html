@@ -3,37 +3,11 @@
 
 {% block content %}
 
-    <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top"  onclick = $("#menu-close").click(); >Cisplatin</a>
-            </li>
-            <li>
-                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
-            </li>
-            <li>
-                <a href="#about" onclick = $("#menu-close").click(); >About</a>
-            </li>
-            <li>
-                <a href="#services" onclick = $("#menu-close").click(); >Projects</a>
-            </li>
-            <li>
-                <a href="#PGP" onclick = $("#menu-close").click(); >PGP Key</a>
-            </li>
-            <li>
-                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
-            </li>
-        </ul>
-    </nav>
-
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
             <h1>Cisplatin</h1>
-            <h3>The personal website of Simon Hajjar</h3>
+            <h3>The website of Simon Hajjar</h3>
             <br>
             <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
         </div>
@@ -46,138 +20,11 @@
                 <div class="col-lg-12 text-center">
                     <h2>About Me</h2>
                     <p class="lead">
-I'm currently a software engineer at Coinbase. My main interest is in cryptography, but I have worked in other fields ranging from bioinformatics to web security.
-                    <p class="lead">
-I'm an avid chess player, with an estimated FIDE rating of 1400. Over the past two years I've played an average
-of 5 games a day. I also take part in bug bounty programs, in which I look for security vulnerabilities in 
-popular websites. Besides computer science, I enjoy weightlifting, and am an aspiring competitive bodybuilder.
+I'm a 21-year-old with terminal osteosarcoma. This website was initially created as a portfolio for my career, but I am now transforming it into the last remenant of myself. The main project that I want to leave behind is my final testament. I consider it my life in a book - a splatter of my favorite memories, thoughts, lists of drugs I've done, and whatever else I decide was important in my life.
                     </p>
-                    <a href="/blog" class="btn btn-dark">&nbsp;&nbsp;&nbsp;Blog&nbsp;&nbsp;&nbsp;</a>
-                    <a href="/resume" class="btn btn-dark">Resume</a>
+                    <br><br><br>
+                    <a href="/final_testament" class="btn btn-dark">Final Testament</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services -->
-    <section id="services" class="services bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2>Projects</h2>
-                    <hr class="small">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Baduk</strong>
-                                </h4>
-                                <p>
-A website for playing Go, written using Node.js and Socket.io. Currently hosted at baduk.ca.
-                                </p>
-                                <a href="https://github.com/19x19/baduk" class="btn btn-light">See Code</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Grandmaster</strong>
-                                </h4>
-                                <p>
-An implementation of chess in C++, with features such as PGN export and ELO ratings.
-                                </p>
-                                <a href="https://github.com/Cisplatin/Grandmaster" class="btn btn-light">See Code</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Krypton</strong>
-                                </h4>
-                                <p>
-Classical cryptographic primitives written in C, ranging from random number generators to hashes.
-                                </p>
-                                <a href="https://github.com/Cisplatin/Krypton" class="btn btn-light">See Code</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Snippets</strong>
-                                </h4>
-                                <p>
-A variety of scripts about data structures, implemented algorithms, and my vimrc.
-                                </p>
-                                <a href="https://github.com/Cisplatin/Snippets" class="btn btn-light">See Code</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Cisplatin</strong>
-                                </h4>
-                                <p>
-A website for my personal portfolio (the one you're on right now!). Written using Django and Bootstrap.
-                                </p>
-                                <a href="https://github.com/Cisplatin/Cisplatin" class="btn btn-light">See Code</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>z-9</strong>
-                                </h4>
-                                <p>
-A minimalistic URL redirection service hosted at z-9.pw. Written using Node.js and Bootstrap.
-                                </p>
-                                <a href="https://github.com/Cisplatin/z-9" class="btn btn-light">See Code</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Elope</strong>
-                                </h4>
-                                <p>
-An ELO library written in Python. Written with a friend to teach him how to program.
-                                </p>
-                                <a href="https://github.com/Cisplatin/Elope" class="btn btn-light">See Code</a>
-                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <h4>
-                                    <strong>Mandlebrot Fractal</strong>
-                                </h4>
-                                <p>
-A Mandelbrot fractal generator written in Java, with zooming capabilities.
-                                </p>
-                                <a href="https://github.com/Cisplatin/MandelbrotFractal" class="btn btn-light">See Code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- PGP Key -->
-    <section id="PGP" class="PGP">
-        <div class="container">
-            <div class="row text-center">
-                <h2>PGP Key</h2>
-                <hr class="small-black">
-                <p class="lead">
-If you would like to send me an e-mail with sensitive information, I ask that you encrypt it using my PGP key.
-<br>
-I rotate my keys on an occasional basis, so I do not recommend saving my public key.
-                </p>
-                <textarea id="PGPkey" class="PGPkey form-control" rows=10 wrap="off" readonly>{{ PGP_KEY }}</textarea>
-                <br>
-                <!-- Add a dialog pop-up for successful copies -->
-                <button id="PGPcopy" class="btn btn-success" data-clipboard-text="{{ PGP_KEY }}">
-                    Copy to Clipboard <i class="fa fa-clipboard"></i>
-                </button>
             </div>
         </div>
     </section>
@@ -187,13 +34,6 @@ I rotate my keys on an occasional basis, so I do not recommend saving my public 
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Simon Hajjar</strong></h4>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (416) 858-7766</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:sjhajjar@uwaterloo.ca">sjhajjar@uwaterloo.ca</a>
-                        </li>
-                    </ul>
-                    <br>
                     <ul class="list-inline">
                         <li>
                             <a href="https://www.facebook.com/hajjar.simon">

@@ -14,8 +14,8 @@ def home(request):
         key = public.read()
     return http_headers(render(request, 'home.html', {'PGP_KEY' : key}))
 
-# Return Simon's resume
-def resume(request):
+# Return Simon's final testament
+def final_testament(request):
     filename = join(BASE_DIR, "static/pdf/Simon Hajjar.pdf")
     wrapper = FileWrapper(file(filename))
     response = http_headers(HttpResponse(wrapper, content_type='application/pdf'))
