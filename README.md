@@ -14,6 +14,5 @@ python manage.py migrate && python manage.py runserver 8000
 
 ## Current To Do
 
-- Make the homepage interactive somehow
-- Add current Spotify/Github activity
 - Download local versions of Google fonts
+- Add photos/vides of life
