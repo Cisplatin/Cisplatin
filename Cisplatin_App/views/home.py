@@ -23,6 +23,15 @@ def final_testament(request):
     response['Content-Length'] = getsize(filename)
     return response
 
+# Return Simon's genome
+def genome(request):
+    filename = join(BASE_DIR, "static/pdf/simon_hajjar_genome.txt")
+    wrapper = FileWrapper(file(filename))
+    response = http_headers(HttpResponse(wrapper, content_type='application/pdf'))
+    response['Content-Disposition'] = 'attachment; filename="%s"' % basename(filename)
+    response['Content-Length'] = getsize(filename)
+    return response
+
 # Return the robots.txt
 def robots(request):
     return http_headers(render(request, 'robots.txt'))
